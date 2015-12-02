@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lee.gs_tracker" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WoWRogue"
+            android:label="@string/title_activity_wo_wrogue"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lee.gs_tracker.MainActivity" />
+        </activity>
+        <activity
+            android:name=".WoWCredentials"
+            android:label="@string/title_activity_wo_wcredentials"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lee.gs_tracker.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DiabloCredentials"
+            android:label="@string/title_activity_diablo_credentials"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lee.gs_tracker.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DiabloCharSelect"
+            android:label="@string/title_activity_diablo_char_select"
+            android:parentActivityName=".DiabloCredentials" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lee.gs_tracker.DiabloCredentials" />
+        </activity>
+        <activity
+            android:name=".DiabloStats"
+            android:label="@string/title_activity_diablo_stats"
+            android:parentActivityName=".DiabloCredentials" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lee.gs_tracker.DiabloCredentials" />
+        </activity>
+    </application>
+
+</manifest>

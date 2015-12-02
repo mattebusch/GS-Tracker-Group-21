@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GS - Tracker</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_wo_wrogue">WoWRogue</string>
+    <string name="title_activity_wo_wcredentials">WoWCredentials</string>
+    <string name="title_activity_diablo_credentials">DiabloCredentials</string>
+    <string name="title_activity_diablo_char_select">DiabloCharSelect</string>
+    <string name="title_activity_diablo_stats">DiabloStats</string>
+</resources>
