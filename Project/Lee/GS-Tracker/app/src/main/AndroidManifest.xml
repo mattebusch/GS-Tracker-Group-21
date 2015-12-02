@@ -1,37 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="lee.gs_tracker" >
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/Theme.AppCompat" >
+        android:theme="@style/Theme.AppCompat"
+        android:label="@string/app_name">
+
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".WoW.WoWRogue"
+        android:label="@string/title_activity_wo_wrogue"
+        android:parentActivityName=".MainActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="lee.gs_tracker.MainActivity" />
+    </activity>
+    <activity
+        android:name=".WoW.WoWCredentials"
+        android:label="@string/title_activity_wo_wcredentials"
+        android:parentActivityName=".MainActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="lee.gs_tracker.MainActivity" />
+    </activity>
+    <activity
+        android:name=".WoW.WoWHunter"
+        android:label="@string/title_activity_wo_whunter"
+        android:parentActivityName=".MainActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="lee.gs_tracker.MainActivity" />
+    </activity>
+    <activity
+        android:name=".WoW.WoWPaladin"
+        android:label="@string/title_activity_wo_wpaladin"
+        android:parentActivityName=".MainActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="lee.gs_tracker.MainActivity" />
+    </activity>
+    <activity
+        android:name=".WoW.WoWMage"
+        android:label="@string/title_activity_wo_wmage"
+        android:parentActivityName=".MainActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="lee.gs_tracker.MainActivity" />
+    </activity>
+    <activity
+        android:name=".WoW.WoWShaman"
+        android:label="@string/title_activity_wo_wshaman"
+        android:parentActivityName=".MainActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="lee.gs_tracker.MainActivity" />
+    </activity>
+    <activity
+        android:name=".WoW.WoWWarrior"
+        android:label="@string/title_activity_wo_wwarrior"
+        android:parentActivityName=".MainActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="lee.gs_tracker.MainActivity" />
+    </activity>
+    <activity
+        android:name=".WoW.WoWDruid"
+        android:label="@string/title_activity_wo_wdruid"
+        android:parentActivityName=".MainActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="lee.gs_tracker.MainActivity" />
+    </activity>
+    <activity
+        android:name=".WoW.WoWPriest"
+        android:label="@string/title_activity_wo_wpriest"
+        android:parentActivityName=".MainActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="lee.gs_tracker.MainActivity" />
+    </activity>
+    <activity
+        android:name=".WoW.WoWWarlock"
+        android:label="@string/title_activity_wo_wwarlock"
+        android:parentActivityName=".MainActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="lee.gs_tracker.MainActivity" />
+    </activity>
+    <activity
+        android:name="lee.gs_tracker.gsCustom.GSCustom"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:windowSoftInputMode="stateHidden|adjustResize">
+        <intent-filter>
+            <action android:name="android.support.PARENT_ACTIVITY"/>
+
+            <category android:name="lee.gs_tracker.MainActivity"/>
+        </intent-filter>
+    </activity>
+
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version"/>
+    <!--@style/AppTheme.NoActionBar-->
         <activity
-            android:name=".WoWRogue"
-            android:label="@string/title_activity_wo_wrogue"
-            android:parentActivityName=".MainActivity" >
+            android:name=".gsCustom.Sports"
+            android:label="@string/title_activity_sports"
+            android:parentActivityName=".gsCustom.GSCustom"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <!--@string/title_activity_shooter-->
+        <activity
+            android:name=".gsCustom.RpgNotes"
+            android:parentActivityName=".gsCustom.GSCustom"
+            android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="lee.gs_tracker.MainActivity" />
+                android:value=".gsCustom.GSCustom"/>
         </activity>
+        <!--android:label="@string/title_activity_shooter"-->
         <activity
-            android:name=".WoWCredentials"
-            android:label="@string/title_activity_wo_wcredentials"
-            android:parentActivityName=".MainActivity" >
+            android:name=".gsCustom.Shooter"
+            android:parentActivityName=".gsCustom.GSCustom"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="lee.gs_tracker.MainActivity" />
+                android:value=".gsCustom.GSCustom"/>
         </activity>
+
+
+
+
     </application>
 
 </manifest>

@@ -1,0 +1,296 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="lee.gs_tracker.WoW.WoWDruid">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/deleteButton"
+        android:onClick="deleteTemplate"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/resetButton"
+        android:onClick="resetTemplate"
+        android:layout_alignBottom="@+id/deleteButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Level"
+        android:id="@+id/levelText"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/serverText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/nameText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/serverText"
+        android:layout_below="@+id/nameText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Health"
+        android:id="@+id/healthText"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/levelText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/levelEdit"
+        android:layout_above="@+id/healthText"
+        android:layout_toLeftOf="@+id/serverText"
+        android:layout_toStartOf="@+id/serverText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/healthEdit"
+        android:layout_alignTop="@+id/healthText"
+        android:layout_toLeftOf="@+id/serverText"
+        android:layout_toStartOf="@+id/serverText" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:layout_alignTop="@+id/levelEdit"
+        android:layout_alignRight="@+id/deleteButton"
+        android:layout_alignEnd="@+id/deleteButton"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Strength"
+        android:id="@+id/strengthText"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/healthText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Agility"
+        android:id="@+id/agilityText"
+        android:layout_below="@+id/strengthText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Intellect"
+        android:id="@+id/intellectText"
+        android:layout_below="@+id/agilityText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Stamina"
+        android:id="@+id/staminaText"
+        android:layout_below="@+id/intellectText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/strengthEdit"
+        android:layout_alignTop="@+id/strengthText"
+        android:layout_alignLeft="@+id/healthEdit"
+        android:layout_alignStart="@+id/healthEdit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/agilityEdit"
+        android:layout_alignTop="@+id/agilityText"
+        android:layout_alignLeft="@+id/strengthEdit"
+        android:layout_alignStart="@+id/strengthEdit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/intellectEdit"
+        android:layout_alignTop="@+id/intellectText"
+        android:layout_alignLeft="@+id/agilityEdit"
+        android:layout_alignStart="@+id/agilityEdit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/staminaEdit"
+        android:layout_alignBottom="@+id/staminaText"
+        android:layout_alignLeft="@+id/intellectEdit"
+        android:layout_alignStart="@+id/intellectEdit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="DPS"
+        android:id="@+id/dpsText"
+        android:layout_alignTop="@+id/agilityEdit"
+        android:layout_alignLeft="@+id/energyText"
+        android:layout_alignStart="@+id/energyText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/dpsEdit"
+        android:layout_alignBaseline="@+id/dpsText"
+        android:layout_alignBottom="@+id/dpsText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Energy"
+        android:id="@+id/energyText"
+        android:layout_alignTop="@+id/intellectEdit"
+        android:layout_toRightOf="@+id/serverText"
+        android:layout_toEndOf="@+id/serverText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/energyEdit"
+        android:layout_alignTop="@+id/energyText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/armorList"
+        android:spinnerMode="dropdown"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/resetButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@+id/serverText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Armor"
+        android:id="@+id/armorText"
+        android:layout_above="@+id/armorList"
+        android:layout_alignRight="@+id/healthText"
+        android:layout_alignEnd="@+id/healthText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Talents"
+        android:id="@+id/talentText"
+        android:layout_alignTop="@+id/staminaEdit"
+        android:layout_toRightOf="@+id/dpsText"
+        android:layout_toEndOf="@+id/dpsText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Spec:"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/talentText"
+        android:layout_toRightOf="@+id/serverText"
+        android:layout_toEndOf="@+id/serverText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Abilities"
+        android:id="@+id/abilitiesText"
+        android:layout_alignTop="@+id/armorText"
+        android:layout_alignLeft="@+id/talentList"
+        android:layout_alignStart="@+id/talentList" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/talentList"
+        android:spinnerMode="dropdown"
+        android:layout_alignTop="@+id/armorList"
+        android:layout_toRightOf="@+id/serverText"
+        android:layout_toEndOf="@+id/serverText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/specEdit"
+        android:layout_below="@+id/talentText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

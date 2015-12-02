@@ -5,4 +5,14 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_wo_wrogue">WoWRogue</string>
     <string name="title_activity_wo_wcredentials">WoWCredentials</string>
+    <string name="title_activity_wo_whunter">WoWHunter</string>
+    <string name="title_activity_wo_wpaladin">WoWPaladin</string>
+    <string name="title_activity_wo_wmage">WoWMage</string>
+    <string name="title_activity_wo_wshaman">WoWShaman</string>
+    <string name="title_activity_wo_wwarrior">WoWWarrior</string>
+    <string name="title_activity_wo_wdruid">WoWDruid</string>
+    <string name="title_activity_wo_wpriest">WoWPriest</string>
+    <string name="title_activity_wo_wwarlock">WoWWarlock</string>
+    <string name="title_activity_sports">Sports</string>
+    <string name="title_activity_shooter">Shooter</string>
 </resources>

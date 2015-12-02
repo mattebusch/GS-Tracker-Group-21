@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="cop4331c.gscustom.GSCustom">
+   <item
+      android:id="@+id/gamelist_deleteall"
+      android:orderInCategory="100"
+      android:title="Delete All"
+      app:showAsAction="never"/>
+
+</menu>

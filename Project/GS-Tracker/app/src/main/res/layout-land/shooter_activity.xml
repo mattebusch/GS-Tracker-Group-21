@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:paddingBottom="@dimen/activity_vertical_margin"
+   android:paddingLeft="@dimen/activity_horizontal_margin"
+   android:paddingRight="@dimen/activity_horizontal_margin"
+   android:paddingTop="@dimen/activity_vertical_margin"
+   tools:context=".Shooter"
+   android:background="@color/colorPrimaryDark"
+   android:id="@+id/shooter_root">
+
+   <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="I Killed A Man"
+      android:id="@+id/shooter_kill"
+      android:textColor="#FF0000"
+      android:textStyle="bold"
+      android:textSize="20sp"
+      android:lines="2"
+      android:maxWidth="135dp"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"/>
+
+   <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="A Man Killed Me"
+      android:id="@+id/shooter_die"
+      android:textColor="#FF0000"
+      android:textStyle="bold"
+      android:textSize="20sp"
+      android:lines="2"
+      android:maxWidth="135dp"
+      android:layout_centerVertical="true"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"
+      android:layout_alignLeft="@+id/shooter_kill"
+      android:layout_alignStart="@+id/shooter_kill"/>
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Number of Victims:"
+      android:id="@+id/textView"
+      android:textColor="@color/colorSportsTextHint"
+      android:layout_below="@+id/shooter_die"
+      android:layout_alignLeft="@+id/textView7"
+      android:layout_alignStart="@+id/textView7"/>
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="A Psychopathic Sadistic Mass Murderer&apos;s Name:"
+      android:id="@+id/textView2"
+      android:textColor="@color/colorSportsTextHint"
+      android:maxLines="4"
+      android:minLines="2"
+      android:textSize="14sp"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_alignRight="@+id/textView"
+      android:layout_alignEnd="@+id/textView"/>
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="A Psychopathic Sadistic Mass Murderer&apos;s Weapon of Choice:"
+      android:id="@+id/textView3"
+      android:textColor="@color/colorSportsTextHint"
+      android:maxLines="4"
+      android:minHeight="2dp"
+      android:textSize="14sp"
+      android:layout_below="@+id/textView10"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_alignRight="@+id/textView2"
+      android:layout_alignEnd="@+id/textView2"/>
+
+   <EditText
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:id="@+id/shooter_name"
+      android:gravity="center_vertical"
+      android:textColor="#e20505"
+      android:textSize="18sp"
+      android:maxLines="2"
+      android:minLines="1"
+      android:textColorHint="@color/colorSportsTextHint"
+      android:hint="[Enter Psycho&apos;s Name]"
+      android:layout_alignParentTop="true"
+      android:layout_toEndOf="@+id/textView2"
+      android:layout_toRightOf="@+id/textView2"
+      android:layout_marginLeft="20dp"/>
+
+   <EditText
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:id="@+id/shooter_weapon"
+      android:gravity="center_vertical"
+      android:textColor="#e20505"
+      android:textSize="18sp"
+      android:minLines="1"
+      android:maxLines="2"
+      android:textColorHint="@color/colorSportsTextHint"
+      android:hint="[Enter Psycho&apos;s Weapon]"
+      android:layout_below="@+id/textView10"
+      android:layout_toEndOf="@+id/textView3"
+      android:layout_alignLeft="@+id/shooter_name"
+      android:layout_alignStart="@+id/shooter_name"/>
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Number of Deaths:"
+      android:id="@+id/textView6"
+      android:textColor="@color/colorSportsTextHint"
+      android:layout_above="@+id/shooter_ratio"
+      android:layout_alignLeft="@+id/textView7"
+      android:layout_alignStart="@+id/textView7"
+      android:layout_toLeftOf="@+id/shooter_ratio"
+      android:layout_toStartOf="@+id/shooter_ratio"
+      android:layout_alignTop="@+id/shooter_reset"/>
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Kill / Death Ratio:"
+      android:id="@+id/textView7"
+      android:textColor="@color/colorSportsTextHint"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_marginBottom="10dp"
+      android:layout_marginLeft="20dp"/>
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:id="@+id/textView8"
+      android:layout_alignTop="@+id/textView"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"/>
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:id="@+id/textView9"
+      android:layout_alignTop="@+id/textView6"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"/>
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:id="@+id/textView10"
+      android:layout_alignBottom="@+id/shooter_kill"
+      android:layout_toLeftOf="@+id/imageView2"
+      android:layout_toStartOf="@+id/imageView2"/>
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:id="@+id/shooter_num_kills"
+      android:textColorHint="@color/colorSportsTextHint"
+      android:textColor="#e20505"
+      android:hint="[value]"
+      android:textSize="25sp"
+      android:singleLine="true"
+      android:textStyle="bold"
+      android:layout_alignLeft="@+id/shooter_num_deaths"
+      android:layout_alignStart="@+id/shooter_num_deaths"
+      android:layout_alignBaseline="@+id/textView"/>
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:id="@+id/shooter_num_deaths"
+      android:textColorHint="@color/colorSportsTextHint"
+      android:textColor="#e20505"
+      android:hint="[value]"
+      android:textSize="25sp"
+      android:singleLine="true"
+      android:textStyle="bold"
+      android:layout_alignBottom="@+id/textView9"
+      android:layout_alignRight="@+id/shooter_ratio"
+      android:layout_alignEnd="@+id/shooter_ratio"/>
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:id="@+id/shooter_ratio"
+      android:textColorHint="@color/colorSportsTextHint"
+      android:textColor="#e20505"
+      android:hint="#!DIV0"
+      android:textSize="25sp"
+      android:singleLine="true"
+      android:textStyle="bold"
+      android:layout_alignBottom="@+id/textView7"
+      android:layout_alignLeft="@+id/shooter_weapon"
+      android:layout_alignStart="@+id/shooter_weapon"/>
+
+   <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="I HAVE REPENTED"
+      android:id="@+id/shooter_reset"
+      android:textColor="#FF0000"
+      android:textStyle="bold"
+      android:textSize="20sp"
+      android:lines="2"
+      android:maxWidth="135dp"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"
+      android:layout_alignLeft="@+id/shooter_die"
+      android:layout_alignStart="@+id/shooter_die"/>
+
+   <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/imageView2"
+      android:layout_centerVertical="true"
+      android:layout_centerHorizontal="true"
+      android:visibility="invisible"/>
+
+</RelativeLayout>

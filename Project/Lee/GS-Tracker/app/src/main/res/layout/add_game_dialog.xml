@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:weightSum="1"
+              android:background="#404040"
+              android:orientation="vertical">
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/dialog_add_title"
+      android:text="Add Game Profile"
+      android:textAppearance="@style/AppTheme.DialogAddGame.Title"
+      android:textColor="#FFFFFF"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp"/>
+
+   <ImageView
+      android:layout_width="fill_parent"
+      android:layout_height="6dp"
+      android:scaleType="fitXY"
+      android:id="@+id/imageView"
+      android:layout_gravity="center_horizontal"
+      android:src="@android:drawable/divider_horizontal_bright"
+      android:layout_weight="1"/>
+
+   <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/dialog_add_content">
+
+      <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game Name"
+            android:id="@+id/dialog_add_game_label"
+            android:textColor="#cccccc"
+            android:layout_marginLeft="5dp"/>
+
+         <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_add_game_name"
+            android:text=""
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:fontFamily="sans-serif"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textIsSelectable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:enabled="true"
+            android:singleLine="true"/>
+
+      </LinearLayout>
+
+      <ListView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/dialog_add_game_type"
+         android:choiceMode="singleChoice"
+         android:layout_gravity="center_horizontal"
+         android:clickable="false"
+         android:drawSelectorOnTop="false"
+         android:listSelector="@drawable/add_game_dialog_color_selector"/>
+   </LinearLayout>
+
+</LinearLayout>

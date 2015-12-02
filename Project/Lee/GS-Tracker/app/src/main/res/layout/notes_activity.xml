@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:paddingBottom="@dimen/activity_vertical_margin"
+   android:paddingLeft="@dimen/activity_horizontal_margin"
+   android:paddingRight="@dimen/activity_horizontal_margin"
+   android:paddingTop="@dimen/activity_vertical_margin"
+   tools:context=".RpgNotes"
+   android:background="@color/colorPrimaryDark"
+   android:textAlignment="textStart">
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Quest Name"
+      android:id="@+id/notes_quest_name_label"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:textColor="@color/colorSportsText"
+      android:textStyle="bold"/>
+
+   <AutoCompleteTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/notes_quest_name"
+      android:inputType="text"
+      android:lines="2"
+      android:textColor="@color/colorSportsEditText"
+      android:layout_below="@+id/notes_quest_name_label"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_above="@+id/notes_quest_notes_label"
+      android:textColorHint="@color/colorSportsTextHint"
+      android:hint="[Enter Quest Name]"
+      android:layout_marginLeft="3dp"
+      android:layout_marginTop="3dp"
+      android:layout_marginBottom="3dp"
+      android:layout_toLeftOf="@+id/notes_quest_delete"
+      android:layout_toStartOf="@+id/notes_quest_delete"/>
+
+   <Button
+      style="?android:attr/buttonStyleSmall"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Add"
+      android:id="@+id/notes_quest_add"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"
+      android:layout_alignLeft="@+id/notes_quest_delete"
+      android:layout_alignStart="@+id/notes_quest_delete"/>
+
+   <Button
+      style="?android:attr/buttonStyleSmall"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Delete"
+      android:id="@+id/notes_quest_delete"
+      android:layout_below="@+id/notes_quest_add"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"/>
+
+   <EditText
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:inputType="textMultiLine"
+      android:ems="10"
+      android:id="@+id/notes_quest_notes"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_above="@+id/notes_quest_complete"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"
+      android:layout_below="@+id/notes_quest_delete"
+      android:layout_marginTop="3dp"
+      android:layout_marginBottom="3dp"
+      android:textColorHint="@color/colorSportsTextHint"
+      android:textColor="@color/colorSportsEditText"
+      android:gravity="top"
+      android:enabled="false"
+      android:hint="[Select an existing quest or add a new quest to modify notes]"/>
+
+   <CheckBox
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Quest Is Complete"
+      android:id="@+id/notes_quest_complete"
+      android:textColor="@color/colorSportsText"
+      android:layout_above="@+id/notes_quest_notes_divider"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:textStyle="normal|italic"/>
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Quest Notes:"
+      android:id="@+id/notes_quest_notes_label"
+      android:textStyle="bold"
+      android:textColor="@color/colorSportsText"
+      android:layout_above="@+id/notes_quest_notes"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"/>
+
+   <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/notes_quest_notes_divider"
+      android:src="@drawable/blackbox"
+      android:scaleType="fitXY"
+      android:layout_above="@+id/notes_quest_count_label"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp"/>
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Total Quests Tracked:"
+      android:id="@+id/notes_quest_count_label"
+      android:layout_alignBaseline="@+id/notes_quest_count"
+      android:layout_alignBottom="@+id/notes_quest_count"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:textColor="@color/colorSportsText"/>
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="New Text"
+      android:id="@+id/notes_quest_count"
+      android:layout_above="@+id/notes_quest_count_complete"
+      android:layout_toEndOf="@+id/notes_quest_count_label"
+      android:layout_toRightOf="@+id/notes_quest_count_label"
+      android:textColor="@color/colorSportsTextHint"
+      android:layout_marginLeft="20dp"/>
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Quests Complete:"
+      android:id="@+id/notes_quest_count_complete_label"
+      android:layout_alignParentBottom="true"
+      android:layout_alignLeft="@+id/notes_quest_name"
+      android:layout_alignStart="@+id/notes_quest_name"
+      android:textColor="@color/colorSportsText"/>
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="New Text"
+      android:id="@+id/notes_quest_count_complete"
+      android:textColor="@color/colorSportsTextHint"
+      android:layout_alignParentBottom="true"
+      android:layout_alignLeft="@+id/notes_quest_count"
+      android:layout_alignStart="@+id/notes_quest_count"/>
+
+</RelativeLayout>
