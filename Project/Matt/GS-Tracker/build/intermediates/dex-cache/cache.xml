@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Matt\AndroidStudioProjects\GS-Tracker\app\libs\json-simple-1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5e303a03d04e6788dddfa3655272580ae0fc13bb">
+        <dex dex="C:\Users\Matt\AndroidStudioProjects\GS-Tracker\app\build\intermediates\pre-dexed\debug\json-simple-1.1-366caced2b3c8587d0c34b77d1b13e03b5cb2ae1.jar" />
+    </item>
+    <item
+        jar="C:\Users\Matt\AndroidStudioProjects\GS-Tracker\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\Users\Matt\AndroidStudioProjects\GS-Tracker\app\build\intermediates\pre-dexed\debug\classes-996b17d5ac92eebc2d3c5c926a25517a8795aa1d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Matt\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="C:\Users\Matt\AndroidStudioProjects\GS-Tracker\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-18ad72c5592f4f444cbd486e68dc0b59accde9ab.jar" />
+    </item>
+    <item
+        jar="C:\Users\Matt\AndroidStudioProjects\GS-Tracker\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\Users\Matt\AndroidStudioProjects\GS-Tracker\app\build\intermediates\pre-dexed\debug\classes-49da2eac6c17b50606a897f4ab6d57b8a1d9ba86.jar" />
+    </item>
+    <item
+        jar="C:\Users\Matt\AndroidStudioProjects\GS-Tracker\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\Users\Matt\AndroidStudioProjects\GS-Tracker\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-0c6981c03f7be2dce5f9be4083c6dc21fc2a5363.jar" />
+    </item>
+    <item
+        jar="C:\Users\Matt\AndroidStudioProjects\GS-Tracker\app\libs\ion-2.1.6.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="cd55ef3ba6d8b62838b658ba2507b019dffb3a08">
+        <dex dex="C:\Users\Matt\AndroidStudioProjects\GS-Tracker\app\build\intermediates\pre-dexed\debug\ion-2.1.6-f88396a83b64c60def6388e4da05dd6abd571fa4.jar" />
+    </item>
+
+</items>
